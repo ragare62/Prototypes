@@ -1,0 +1,292 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{97DB9E38-C53B-417C-B150-017A1A2B590E}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WebHtml5</RootNamespace>
+    <AssemblyName>WebHtml5</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="Telerik.Web.UI">
+      <HintPath>..\..\..\..\Program Files\Telerik\RadControls for ASP.NET AJAX Q3 2012\Bin45\Telerik.Web.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.Web.UI.Skins">
+      <HintPath>..\..\..\..\Program Files\Telerik\RadControls for ASP.NET AJAX Q3 2012\Bin45\Telerik.Web.UI.Skins.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Data\RadCaptcha\0.wav" />
+    <Content Include="App_Data\RadCaptcha\1.wav" />
+    <Content Include="App_Data\RadCaptcha\2.wav" />
+    <Content Include="App_Data\RadCaptcha\3.wav" />
+    <Content Include="App_Data\RadCaptcha\4.wav" />
+    <Content Include="App_Data\RadCaptcha\5.wav" />
+    <Content Include="App_Data\RadCaptcha\6.wav" />
+    <Content Include="App_Data\RadCaptcha\7.wav" />
+    <Content Include="App_Data\RadCaptcha\8.wav" />
+    <Content Include="App_Data\RadCaptcha\9.wav" />
+    <Content Include="App_Data\RadCaptcha\A.wav" />
+    <Content Include="App_Data\RadCaptcha\B.wav" />
+    <Content Include="App_Data\RadCaptcha\C.wav" />
+    <Content Include="App_Data\RadCaptcha\D.wav" />
+    <Content Include="App_Data\RadCaptcha\E.wav" />
+    <Content Include="App_Data\RadCaptcha\F.wav" />
+    <Content Include="App_Data\RadCaptcha\G.wav" />
+    <Content Include="App_Data\RadCaptcha\H.wav" />
+    <Content Include="App_Data\RadCaptcha\I.wav" />
+    <Content Include="App_Data\RadCaptcha\J.wav" />
+    <Content Include="App_Data\RadCaptcha\K.wav" />
+    <Content Include="App_Data\RadCaptcha\L.wav" />
+    <Content Include="App_Data\RadCaptcha\M.wav" />
+    <Content Include="App_Data\RadCaptcha\N.wav" />
+    <Content Include="App_Data\RadCaptcha\O.wav" />
+    <Content Include="App_Data\RadCaptcha\P.wav" />
+    <Content Include="App_Data\RadCaptcha\Q.wav" />
+    <Content Include="App_Data\RadCaptcha\R.wav" />
+    <Content Include="App_Data\RadCaptcha\S.wav" />
+    <Content Include="App_Data\RadCaptcha\T.wav" />
+    <Content Include="App_Data\RadCaptcha\U.wav" />
+    <Content Include="App_Data\RadCaptcha\V.wav" />
+    <Content Include="App_Data\RadCaptcha\W.wav" />
+    <Content Include="App_Data\RadCaptcha\X.wav" />
+    <Content Include="App_Data\RadCaptcha\Y.wav" />
+    <Content Include="App_Data\RadCaptcha\Z.wav" />
+    <Content Include="content\css\ariadna-metro.css" />
+    <Content Include="content\css\bootmetro-charms.css" />
+    <Content Include="content\css\bootmetro-tiles.css" />
+    <Content Include="content\css\bootmetro.css" />
+    <Content Include="content\css\bootstrap-responsive.css" />
+    <Content Include="content\css\bootstrap.css" />
+    <Content Include="content\css\datepicker.css" />
+    <Content Include="content\css\demo-old.css" />
+    <Content Include="content\css\demo.css" />
+    <Content Include="content\css\icomoon.css" />
+    <Content Include="content\css\metro-ui-dark.css" />
+    <Content Include="content\css\metro-ui-light.css" />
+    <Content Include="content\font\IcoMoon.svg" />
+    <Content Include="content\font\icomoon97172\IcoMoon.svg" />
+    <Content Include="content\font\icomoon97172\index.html" />
+    <Content Include="content\font\icomoon97172\license.txt" />
+    <Content Include="content\font\icomoon97172\style.css" />
+    <Content Include="content\font\LICENSE.txt" />
+    <Content Include="content\font\opensans-bold-webfont.svg" />
+    <Content Include="content\font\opensans-light-webfont.svg" />
+    <Content Include="content\font\opensans-regular-webfont.svg" />
+    <Content Include="content\font\opensans-semibold-webfont.svg" />
+    <Content Include="content\ico\apple-touch-icon-114-precomposed.png" />
+    <Content Include="content\ico\apple-touch-icon-144-precomposed.png" />
+    <Content Include="content\ico\apple-touch-icon-57-precomposed.png" />
+    <Content Include="content\ico\apple-touch-icon-72-precomposed.png" />
+    <Content Include="content\ico\favicon.ico" />
+    <Content Include="content\img\appbar.png" />
+    <Content Include="content\img\avatar-movie-puzzles-2.jpg" />
+    <Content Include="content\img\bootstrap-mdo-sfmoma-01.jpg" />
+    <Content Include="content\img\bootstrap-mdo-sfmoma-02.jpg" />
+    <Content Include="content\img\bootstrap-mdo-sfmoma-03.jpg" />
+    <Content Include="content\img\bs-docs-masthead-pattern.png" />
+    <Content Include="content\img\bs-docs-responsive-illustrations.png" />
+    <Content Include="content\img\bs-docs-twitter-github.png" />
+    <Content Include="content\img\Coding app.png" />
+    <Content Include="content\img\detail-appbar-1.png" />
+    <Content Include="content\img\detail-appbar-2.png" />
+    <Content Include="content\img\detail-charms.png" />
+    <Content Include="content\img\detail-headermenu.png" />
+    <Content Include="content\img\detail-hub.png" />
+    <Content Include="content\img\detail-icons.png" />
+    <Content Include="content\img\detail-themes.png" />
+    <Content Include="content\img\Devices.png" />
+    <Content Include="content\img\examples\bootstrap-example-carousel.png" />
+    <Content Include="content\img\examples\bootstrap-example-fluid.jpg" />
+    <Content Include="content\img\examples\bootstrap-example-hero.jpg" />
+    <Content Include="content\img\examples\bootstrap-example-marketing-narrow.png" />
+    <Content Include="content\img\examples\bootstrap-example-signin.png" />
+    <Content Include="content\img\examples\bootstrap-example-starter.jpg" />
+    <Content Include="content\img\examples\bootstrap-example-sticky-footer.png" />
+    <Content Include="content\img\examples\browser-icon-chrome.png" />
+    <Content Include="content\img\examples\browser-icon-firefox.png" />
+    <Content Include="content\img\examples\browser-icon-safari.png" />
+    <Content Include="content\img\examples\slide-01.jpg" />
+    <Content Include="content\img\examples\slide-02.jpg" />
+    <Content Include="content\img\examples\slide-03.jpg" />
+    <Content Include="content\img\github-icons.png" />
+    <Content Include="content\img\github.gif" />
+    <Content Include="content\img\glyphicons-halflings-white.png" />
+    <Content Include="content\img\glyphicons-halflings.png" />
+    <Content Include="content\img\grid-baseline-20px.png" />
+    <Content Include="content\img\h2.png" />
+    <Content Include="content\img\hero-small.png" />
+    <Content Include="content\img\hero.png" />
+    <Content Include="content\img\hero2.png" />
+    <Content Include="content\img\hero3-black.png" />
+    <Content Include="content\img\hero3.png" />
+    <Content Include="content\img\hero4.png" />
+    <Content Include="content\img\less-css-logo.png" />
+    <Content Include="content\img\less-logo-large.png" />
+    <Content Include="content\img\logo-grupo-dominguis.gif" />
+    <Content Include="content\img\metro-tiles-wide.jpg" />
+    <Content Include="content\img\metro-tiles-widepeek.png" />
+    <Content Include="content\img\metro-tiles.jpg" />
+    <Content Include="content\img\My Apps.png" />
+    <Content Include="content\img\Octocat-96x96.png" />
+    <Content Include="content\img\octocat.png" />
+    <Content Include="content\img\progress-indeterminate-dark.gif" />
+    <Content Include="content\img\progress-indeterminate-light.gif" />
+    <Content Include="content\img\progress-indeterminate-ring-dark-small.gif" />
+    <Content Include="content\img\progress-indeterminate-ring-dark.gif" />
+    <Content Include="content\img\progress-indeterminate-ring-light-small.gif" />
+    <Content Include="content\img\progress-indeterminate-ring-light.gif" />
+    <Content Include="content\img\RegEdit.png" />
+    <Content Include="content\img\sample1.png" />
+    <Content Include="content\img\sample2.png" />
+    <Content Include="content\img\sample3.png" />
+    <Content Include="content\img\sample4.png" />
+    <Content Include="content\img\sample5.png" />
+    <Content Include="content\img\slide1.png" />
+    <Content Include="content\img\slider2.png" />
+    <Content Include="content\img\tile-wide-collection-1.jpg" />
+    <Content Include="content\img\tile-wide-collection-2.png" />
+    <Content Include="content\img\tile-wide-collection-3.gif" />
+    <Content Include="content\img\tile-wide-collection-4.png" />
+    <Content Include="content\img\tile-wide.jpg" />
+    <Content Include="content\img\tile.png" />
+    <Content Include="content\img\Windows 8.png" />
+    <Content Include="content\img\Windows alt.png" />
+    <Content Include="content\img\Windows Store.png" />
+    <Content Include="content\img\windows-8-fish.jpg" />
+    <Content Include="content\img\Windows.png" />
+    <Content Include="content\img\windows_8_logo.png" />
+    <Content Include="WhatDoIDoPage.html" />
+    <Content Include="Default.aspx" />
+    <Content Include="ExampleForm.aspx" />
+    <Content Include="IntroPage.html" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ExampleForm.aspx.cs">
+      <DependentUpon>ExampleForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ExampleForm.aspx.designer.cs">
+      <DependentUpon>ExampleForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Data\RadSpell\de-DE.tdf" />
+    <Content Include="App_Data\RadSpell\en-US.tdf" />
+    <Content Include="App_Data\RadSpell\fr-FR.tdf" />
+    <Content Include="content\css\LICENSE" />
+    <Content Include="content\font\IcoMoon.eot" />
+    <Content Include="content\font\IcoMoon.ttf" />
+    <Content Include="content\font\IcoMoon.woff" />
+    <Content Include="content\font\icomoon97172\IcoMoon.eot" />
+    <Content Include="content\font\icomoon97172\IcoMoon.ttf" />
+    <Content Include="content\font\icomoon97172\IcoMoon.woff" />
+    <Content Include="content\font\opensans-bold-webfont.eot" />
+    <Content Include="content\font\opensans-bold-webfont.ttf" />
+    <Content Include="content\font\opensans-bold-webfont.woff" />
+    <Content Include="content\font\opensans-light-webfont.eot" />
+    <Content Include="content\font\opensans-light-webfont.ttf" />
+    <Content Include="content\font\opensans-light-webfont.woff" />
+    <Content Include="content\font\opensans-regular-webfont.eot" />
+    <Content Include="content\font\opensans-regular-webfont.ttf" />
+    <Content Include="content\font\opensans-regular-webfont.woff" />
+    <Content Include="content\font\opensans-semibold-webfont.eot" />
+    <Content Include="content\font\opensans-semibold-webfont.ttf" />
+    <Content Include="content\font\opensans-semibold-webfont.woff" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>62201</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:57205/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+      <UserProperties UseAjaxifiedTemplates="True" UseJQuerySupport="True" />
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,11 @@
+﻿body
+{
+}
+
+#TitleArea
+{
+    padding:5px;
+    border-bottom:solid;
+    border-bottom-width:thin;
+    border-color:gray;
+}
