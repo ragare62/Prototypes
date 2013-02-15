@@ -54,51 +54,66 @@
         </header>
 
         <div class="container lead" style="color:forestgreen;">
-            Bienvenido Rafael Garcia
+            <div class="icon-user lead pull-left" style="margin:5px;"></div>
+            <div>Datos personales</div>
+        </div>
+        <div class="container">
+            <div id="my-toolbar" style="padding:5px;">
+                <button class="btn-success" style="border-radius:5px;" onclick="ari_openSelf('AutoLoad.html');">
+                    <i class="icon-upload"></i>
+                </button>
+                <button class="btn-success" style="border-radius:5px;" onclick="ari_openSelf('HandLoad.html');">
+                    <i class="icon-clipboard"></i>
+                </button>
+                <button class="btn-success"  style="border-radius:5px;" onclick="ari_openSelf('Invoices.html');">
+                    <i class="icon-document"></i>
+                </button>
+                <button class="btn-success"  style="border-radius:5px;" onclick="ari_openSelf('Payments.html');">
+                    <i class="icon-clipboard-2"></i>
+                </button>
+                <button class="btn-success"  style="border-radius:5px;" onclick="ari_openSelf('PersonalData.html');">
+                    <i class="icon-user"></i>
+                </button>
+                <button class="btn-success"  style="border-radius:5px;" onclick="ari_openSelf('Notifications.html');">
+                    <i class="icon-email"></i>
+                </button>
+                <button class="btn-success pull-right"  style="border-radius:5px;" onclick="ari_openSelf('Welcome.html');">
+                    <i class="icon-exit"></i>
+                </button>
+            </div>
+            <p>Estos son los datos de su empresa que figuran en nuestros ficheros. Si alguno de ellos fueran erróneo o hubiese cambiado, escriba el dato correcto y haga clic en “Notificar cambios”.</p>
         </div>
         <div id="ContentArea" class="container metro">
-            <a class="tile wide text" href="AutoLoad.html"  style="background-color:forestgreen;padding:5px;">
-                <div>
-                    <i class="icon-upload"></i>
-                    <h3>Carga automática</h3>
-                    <p>Si dispone de sus facturas en formato facturae y firmadas electrónicamente, puede hacer uso de la carga automática.</p>
+            <div class="row">
+                <div id="cif" class="span3" >
+                    <label>CIF</label>
+                    <input type="text" id="txtCIF" style="width:90%"  />
                 </div>
-            </a>
-            <a class="tile wide text" href="HandLoad.html"  style="background-color:forestgreen;padding:5px;">
-                <div>
-                    <i class="icon-clipboard"></i>
-                    <h3>Carga manual</h3>
-                    <p>Puede introducir manualmente sus facturas con firma delegada</p>
+                <div class="span3"></div>
+                <div id="razon-social" class="span6">
+                    <label>Razon social</label>
+                    <input type="text" id="txtRazonSocial" style="width:90%" />
                 </div>
-            </a>
-            <a class="tile wide text" href="Invoices.html"  style="background-color:forestgreen;padding:5px;">
-                <div>
-                    <i class="icon-document"></i>
-                    <h3>Consulta facturas</h3>
-                    <p>Puede consultar las facturas cargadas y su estado</p>
+            </div>
+            <div class="row">
+                <div class="span6">
+                    <label>Dirección</label>
+                    <input type="text" id="Text1" style="width:90%" />
                 </div>
-            </a>
-            <a class="tile wide text" href="Payments.html"  style="background-color:forestgreen;padding:5px;">
-                <div>
-                    <i class="icon-clipboard-2"></i>
-                    <h3>Situación de cobros</h3>
-                    <p>Puede consultar los pagos programados y en qué fecha</p>
+                <div class="span2">
+                    <label>Cod.Postal</label>
+                    <input type="text" id="Text2" style="width:90%" />
                 </div>
-            </a>
-            <a class="tile wide text" href="PersonalData.html"  style="background-color:forestgreen;padding:5px;">
-                <div>
-                    <i class="icon-user"></i>
-                    <h3>Sus datos</h3>
-                    <p>Acceda para consultar sus datos y podernos notificar cualquier cambio en los mismos.</p>
+                <div class="span4">
+                    <label>Población</label>
+                    <input type="text" id="Text3" style="width:90%" />
                 </div>
-            </a>
-            <a class="tile wide text" href="Notifications.html"  style="background-color:forestgreen;padding:5px;">
+            </div>
+            <div class="row">
                 <div>
-                    <i class="icon-mail"></i>
-                    <h3>Notificaciones</h3>
-                    <p>En este apartado puede consultar los diferentes mensajes generados durante el procesamiento de sus facturas.</p>
+                    <button class="btn-success pull-right">Notificar cambios</button>
                 </div>
-            </a>
+            </div>
         </div>
         <footer>
 
