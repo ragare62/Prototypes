@@ -206,6 +206,7 @@
     <Content Include="content\img\windows_8_logo.png" />
     <Content Include="content\img\ya_soy_login.png" />
     <Content Include="content\img\ya_soy_nuevo.png" />
+    <Content Include="Welcome.html" />
     <Content Include="MoreInfo.html" />
     <Content Include="LostGuestPage.html" />
     <Content Include="index.html" />
@@ -286,7 +287,7 @@
           <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
         </WebProjectProperties>
       </FlavorProperties>
-      <UserProperties UseJQuerySupport="True" UseAjaxifiedTemplates="True" />
+      <UserProperties UseAjaxifiedTemplates="True" UseJQuerySupport="True" />
     </VisualStudio>
   </ProjectExtensions>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
