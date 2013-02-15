@@ -183,6 +183,7 @@
     <Content Include="content\img\progress-indeterminate-ring-dark.gif" />
     <Content Include="content\img\progress-indeterminate-ring-light-small.gif" />
     <Content Include="content\img\progress-indeterminate-ring-light.gif" />
+    <Content Include="content\img\quiero_ser.png" />
     <Content Include="content\img\RegEdit.png" />
     <Content Include="content\img\sample1.png" />
     <Content Include="content\img\sample2.png" />
@@ -203,6 +204,12 @@
     <Content Include="content\img\windows-8-fish.jpg" />
     <Content Include="content\img\Windows.png" />
     <Content Include="content\img\windows_8_logo.png" />
+    <Content Include="content\img\ya_soy_login.png" />
+    <Content Include="content\img\ya_soy_nuevo.png" />
+    <Content Include="MoreInfo.html" />
+    <Content Include="LostGuestPage.html" />
+    <Content Include="index.html" />
+    <Content Include="js\ariadna\ari_windows.js" />
     <Content Include="WhatDoIDoPage.html" />
     <Content Include="Default.aspx" />
     <Content Include="ExampleForm.aspx" />
@@ -279,7 +286,7 @@
           <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
         </WebProjectProperties>
       </FlavorProperties>
-      <UserProperties UseAjaxifiedTemplates="True" UseJQuerySupport="True" />
+      <UserProperties UseJQuerySupport="True" UseAjaxifiedTemplates="True" />
     </VisualStudio>
   </ProjectExtensions>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

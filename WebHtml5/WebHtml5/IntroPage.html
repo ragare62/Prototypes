@@ -8,7 +8,8 @@
         <meta name="viewport" content="width=device-width">
 
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-        <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700' rel='stylesheet' type='text/css'>
+
         <link rel="stylesheet" type="text/css" href="content/css/bootstrap.css">
         <link rel="stylesheet" type="text/css" href="content/css/bootstrap-responsive.css">
         <link rel="stylesheet" type="text/css" href="content/css/bootmetro.css">
@@ -20,6 +21,7 @@
         <!--  these two css are to use only for documentation -->
         <link rel="stylesheet" type="text/css" href="content/css/demo.css">
         <link rel="stylesheet" type="text/css" href="scripts/google-code-prettify/prettify.css" >
+        
 
         <title>(C) Ariadna Software S.L.</title>
     </head>
@@ -29,7 +31,7 @@
                 <div class="span10">
                     <img src="content/img/logo-grupo-dominguis.gif" />
                     <br />
-                    <h2>Servicios de proveedores</h2>
+                    <h2>Servicios a proveedores</h2>
                 </div>
                 <div class="span2">
                     <h3>Versión 1.0.1</h3>
@@ -40,25 +42,25 @@
             Escoja el tipo de dispositivo
         </div>
         <div id="ContentArea" class="container metro">
-            <div class="tile" style="padding:5px;" onclick="window.open();">
+            <div class="tile" style="padding:5px;" onclick="ari_openDesktop();">
                 <i class="icon-screen"></i>
                 <h3>Desktop</h3>
                 <p>Equipos de sobremesa: Windows, Linux, Apple...</p>
             </div>
-            <div class="tile" style="padding:5px;">
+            <div class="tile" style="padding:5px;" onclick="ari_openTablet();">
                 <i class="icon-tablet"></i>
                 <h3>Tablet</h3>
                 <p>Dispositivos tipo IPad, tablet Android...</p>
             </div>
-            <div class="tile" style="padding:5px;">
+            <div class="tile" style="padding:5px;" onclick="ari_openSmartphone();">
                 <i class="icon-mobile"></i>
                 <h3>Smartphone</h3>
-                <p>Dissitivos tipo IPhone, Android...</p>
+                <p>Dispositivos tipo IPhone, Android...</p>
             </div>
         </div>
         <footer>
 
         </footer>
-
+        <script type="text/javascript" src="js/ariadna/ari_windows.js"></script>
     </body>
 </html>
