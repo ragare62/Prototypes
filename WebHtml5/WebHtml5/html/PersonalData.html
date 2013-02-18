@@ -1,0 +1,153 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta charset="utf-8" />
+        <!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame -->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+        <!-- Mobile viewport optimized: h5bp.com/viewport -->
+        <meta name="viewport" content="width=device-width">
+
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700' rel='stylesheet' type='text/css'>
+
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+        <link rel="stylesheet" type="text/css" href="css/bootstrap-responsive.css">
+        <link rel="stylesheet" type="text/css" href="css/bootmetro.css">
+        <link rel="stylesheet" type="text/css" href="css/bootmetro-tiles.css">
+        <link rel="stylesheet" type="text/css" href="css/bootmetro-charms.css">
+        <link rel="stylesheet" type="text/css" href="css/metro-ui-light.css">
+        <link rel="stylesheet" type="text/css" href="css/icomoon.css">
+        <link rel="stylesheet" type="text/css" href="content/css/datepicker.css" />
+
+        <!--  these two css are to use only for documentation -->
+        <link rel="stylesheet" type="text/css" href="css/demo.css">
+        <link rel="stylesheet" type="text/css" href="scripts/google-code-prettify/prettify.css" >
+
+        <title>(C) Ariadna Software S.L.</title>
+    </head>
+    <body>
+        <header id="nav-bar" class="container-fluid">
+            <div class="row-fluid">
+                <div class="span6">
+                    <div id="header-container">
+                        <a id="backbutton" class="win-backbutton" href="WhatDoIDoPage.html"></a>
+                        <h5>Grupo Dominguis</h5>
+                        <h2>Servicios a proveedores</h2>
+                    </div>
+                </div>
+                <div class="span6">
+                    <div id="top-info" class="pull-right">
+                        <a href="#" class="pull-left">
+                            <div class="top-info-block">
+                                <h3>Ariadna Software S.L.</h3>
+                                <h4>Usuario: rafael.garcia@ariadnasoftware.com</h4>
+                            </div>
+                        </a>
+
+                        <hr class="separator pull-left"/>
+                        <a id="settings" class="pull-left" href="#">
+                            <b class="icon-settings"></b>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="container lead" style="color:forestgreen;">
+            <div class="icon-user lead pull-left" style="margin:5px;"></div>
+            <div>Datos personales</div>
+        </div>
+        <div class="container">
+            <div id="my-toolbar" style="padding:5px;">
+                <button class="btn-success" style="border-radius:5px;" onclick="ari_openSelf('AutoLoad.html');">
+                    <i class="icon-upload"></i>
+                </button>
+                <button class="btn-success" style="border-radius:5px;" onclick="ari_openSelf('HandLoad.html');">
+                    <i class="icon-clipboard"></i>
+                </button>
+                <button class="btn-success"  style="border-radius:5px;" onclick="ari_openSelf('Invoices.html');">
+                    <i class="icon-document"></i>
+                </button>
+                <button class="btn-success"  style="border-radius:5px;" onclick="ari_openSelf('Payments.html');">
+                    <i class="icon-clipboard-2"></i>
+                </button>
+                <button class="btn-success"  style="border-radius:5px;" onclick="ari_openSelf('PersonalData.html');">
+                    <i class="icon-user"></i>
+                </button>
+                <button class="btn-success"  style="border-radius:5px;" onclick="ari_openSelf('Notifications.html');">
+                    <i class="icon-email"></i>
+                </button>
+                <button class="btn-success pull-right"  style="border-radius:5px;" onclick="ari_openSelf('Welcome.html');">
+                    <i class="icon-exit"></i>
+                </button>
+            </div>
+            <p>Estos son los datos de su empresa que figuran en nuestros ficheros. Si alguno de ellos fueran erróneo o hubiese cambiado, escriba el dato correcto y haga clic en “Notificar cambios”.</p>
+        </div>
+        <div id="ContentArea" class="container metro">
+            <div class="row">
+                <div id="cif" class="span3" >
+                    <label>CIF</label>
+                    <input type="text" id="txtCIF" style="width:90%"  />
+                </div>
+                <div class="span3"></div>
+                <div id="razon-social" class="span6">
+                    <label>Razon social</label>
+                    <input type="text" id="txtRazonSocial" style="width:90%" />
+                </div>
+            </div>
+            <div class="row">
+                <div class="span6">
+                    <label>Dirección</label>
+                    <input type="text" id="Text1" style="width:90%" />
+                </div>
+                <div class="span2">
+                    <label>Cod.Postal</label>
+                    <input type="text" id="Text2" style="width:90%" />
+                </div>
+                <div class="span4">
+                    <label>Población</label>
+                    <input type="text" id="Text3" style="width:90%" />
+                </div>
+            </div>
+            <div class="row">
+                <div class="span3" id="email">
+                    <label id="lblEmail" for="txtEmail">Correo electrónico</label>
+                    <input id="txtEmail" type="text" style="width:90%;"/>
+                </div>
+                <div class="span3" id="sms">
+                    <label id="lbSms" for="txtSms">SMS</label>
+                    <input id="txtSms" type="text" style="width:90%;"/>
+                </div>
+                <div class="span3" id="movil">
+                    <label id="lblMovil" for="txtMovil">Teléfono móvil</label>
+                    <input id="txtMovil" type="text" style="width:90%;"/>
+                </div>
+                <div class="span3" id="telefono">
+                    <label id="lblTelefono" for="txtTelefono">Teléfono fijo</label>
+                    <input id="txtTelefono" type="text" style="width:90%;"/>
+                </div>
+            </div>
+            <div class="row">
+                <div class="span3">
+                    <label id="lblFechaAlta">Fecha de alta</label>
+                    <div data-date-format="dd-mm-yyyy" data-date="01-01-2013" id="dp3" class="input-append datepicker">
+                        <input type="text" readonly="" value="01-01-2013" size="16" class="span2"/>
+                        <span class="add-on"><i class="icon-calendar"></i></span>
+                    </div>
+                </div>
+                <div class="span8"></div>
+
+            </div>
+            <div class="row">
+                <div>
+                    <button class="btn-success pull-right">Notificar cambios</button>
+                </div>
+            </div>
+        </div>
+        <footer>
+
+        </footer>
+        <script type="text/javascript" src="js/ariadna/ari_windows.js"></script>
+    </body>
+</html>

@@ -1,0 +1,30 @@
+﻿.arm-wide-green
+{
+    color:white;
+    background-color:forestgreen;
+    padding:10px;
+    border-bottom-style:solid;
+    border-color:dimgray;
+    border-width:thin;
+    border-radius: 15px;
+}
+.arm-wide-violet
+{
+    color:white;
+    background-color:blueviolet;
+    padding:10px;
+    border-bottom-style:solid;
+    border-color:dimgray;
+    border-width:thin;
+    border-radius: 15px;
+}
+.arm-wide-blue
+{
+    color:white;
+    background-color:#0072BC !important;
+    padding:10px;
+    border-bottom-style:solid;
+    border-color:dimgray;
+    border-width:thin;
+    border-radius: 15px;
+}
