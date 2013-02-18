@@ -329,6 +329,12 @@
     <Content Include="content\img\ya_soy_login.png" />
     <Content Include="content\img\ya_soy_nuevo.png" />
     <Content Include="html\AutoLoad.html" />
+    <Content Include="html\InvoiceSearch.html" />
+    <Content Include="html\Invoice.html" />
+    <Content Include="html\FinalManualInvoice.html" />
+    <Content Include="html\ManualInvoices.html" />
+    <Content Include="html\FinalAutoLoad.html" />
+    <Content Include="html\VerifingInvoices.html" />
     <Content Include="html\LoadFiles.html" />
     <Content Include="html\PendingOrders2.html" />
     <Content Include="html\PendingOrders.html" />
@@ -567,7 +573,7 @@
           <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
         </WebProjectProperties>
       </FlavorProperties>
-      <UserProperties UseAjaxifiedTemplates="True" UseJQuerySupport="True" />
+      <UserProperties UseJQuerySupport="True" UseAjaxifiedTemplates="True" />
     </VisualStudio>
   </ProjectExtensions>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

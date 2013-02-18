@@ -57,12 +57,17 @@
             <div class="icon-email lead pull-left" style="margin:5px;"></div>
             <div>Notificaciones</div>
         </div>
+        <div class="container" style="background-color:forestgreen;color:white;padding:5px;font:large;">
+            <div>
+                Notificaciones recibidas desde el sistema.
+            </div>
+        </div>
         <div class="container">
             <div id="my-toolbar" style="padding:5px;">
-                <button class="btn-success" style="border-radius:5px;" onclick="ari_openSelf('AutoLoad.html');">
+                <button class="btn-success" style="border-radius:5px;" onclick="ari_openSelf('PendingOrders.html');">
                     <i class="icon-upload"></i>
                 </button>
-                <button class="btn-success" style="border-radius:5px;" onclick="ari_openSelf('HandLoad.html');">
+                <button class="btn-success" style="border-radius:5px;" onclick="ari_openSelf('PendingOrders2.html');">
                     <i class="icon-clipboard"></i>
                 </button>
                 <button class="btn-success"  style="border-radius:5px;" onclick="ari_openSelf('Invoices.html');">
@@ -83,6 +88,48 @@
             </div>
         </div>
         <div id="ContentArea" class="container metro">
+            <div class="row">
+                <div class="span12">
+                    <table class="table table-condensed table-hover" >
+                        <thead >
+                            <tr >
+                                <th class="span1" style="color:forestgreen;">N.Factura</th>
+                                <th class="span1" style="color:forestgreen;">Fecha factura</th>
+                                <th class="span1 aling-right" style="color:forestgreen;">Importe factura</th>
+                                <th class="span2" style="color:forestgreen;">Fecha notificación</th>
+                                <th class="span2" style="color:forestgreen;">Tipo</th>
+                                <th class="span5" style="color:forestgreen;">Observaciones</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="success">
+                                <td>F000245</td>
+                                <td>01/01/2013</td>
+                                <td>520,10&#x20AC;</td>
+                                <td>01/01/2013</td>
+                                <td>ACEPTACION FACTURA</td>
+                                <td>Su factura F000245 (01/01/2013) de 520,10&#x20AC; ha sido admitida en el sistema. Ya puede consultar su situación de cobro.</td>
+                            </tr>
+                            <tr class="error">
+                                <td>F000247</td>
+                                <td>01/01/2013</td>
+                                <td>2.630,00&#x20AC;</td>
+                                <td>02/01/2013</td>
+                                <td>RECHAZO FACTURA</td>
+                                <td>Su factura F000247 (01/01/2013) de 2.630,00&#x20AC; ha sido rechazada por no coincidir con el importe del pedido.</td>
+                            </tr>
+                            <tr class="info">
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td>02/01/2013</td>
+                                <td>INFORMATIVO</td>
+                                <td>Su solicitud de cambio en los datos de empresa ha sido procesada. Verique que los cambios son correctos</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
         </div>
         <footer>
 

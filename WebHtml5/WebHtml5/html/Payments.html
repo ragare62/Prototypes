@@ -57,12 +57,17 @@
             <div class="icon-clipboard-2 lead pull-left" style="margin:5px;"></div>
             <div>Situación de cobros</div>
         </div>
+        <div class="container" style="background-color:forestgreen;color:white;padding:5px;font:large;">
+            <div>
+                Detalle de los pagos de factura pendientes.
+            </div>
+        </div>
         <div class="container">
             <div id="my-toolbar" style="padding:5px;">
-                <button class="btn-success" style="border-radius:5px;" onclick="ari_openSelf('AutoLoad.html');">
+                <button class="btn-success" style="border-radius:5px;" onclick="ari_openSelf('PendingOrders.html');">
                     <i class="icon-upload"></i>
                 </button>
-                <button class="btn-success" style="border-radius:5px;" onclick="ari_openSelf('HandLoad.html');">
+                <button class="btn-success" style="border-radius:5px;" onclick="ari_openSelf('PendingOrders2.html');">
                     <i class="icon-clipboard"></i>
                 </button>
                 <button class="btn-success"  style="border-radius:5px;" onclick="ari_openSelf('Invoices.html');">
@@ -83,6 +88,42 @@
             </div>
         </div>
         <div id="ContentArea" class="container metro">
+            <div class="row">
+                <div class="span12">
+                    <table class="table table-condensed table-hover" >
+                        <thead >
+                            <tr >
+                                <th class="span1" style="color:forestgreen;">Estado</th>
+                                <th class="span2" style="color:forestgreen;">N.Factura</th>
+                                <th class="span2" style="color:forestgreen;">Fecha factura</th>
+                                <th class="span2 aling-right" style="color:forestgreen;">Importe factura</th>
+                                <th class="span2 aling-right" style="color:forestgreen;">Fecha prevista de pago.</th>
+                                <th class="span3" style="color:forestgreen;">Observaciones</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>PENDIENTE</td>
+                                <td>F000245</td>
+                                <td>01/01/2013</td>
+                                <td>
+                                    520,10&#x20AC;</td>
+                                <td>06/05/2013</td>
+                                <td>El pago se realizará mediante transferencia</td>
+                            </tr>
+                            <tr>
+                                <td>PENDIENTE</td>
+                                <td>F00247</td>
+                                <td>03/01/2013</td>
+                                <td>
+                                    480,20&#x20AC;</td>
+                                <td>06/05/2013</td>
+                                <td>El pago se realizará mediante transferencia</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
         </div>
         <footer>
 

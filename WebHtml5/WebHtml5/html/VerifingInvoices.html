@@ -54,10 +54,16 @@
         </header>
 
         <div class="container lead" style="color:forestgreen;">
-            <div class="icon-clipboard lead pull-left" style="margin:5px;"></div>
-            <div>Carga manual de facturas</div>
+            <div class="icon-upload lead pull-left" style="margin:5px;"></div>
+            <div>Carga automática de facturas</div>
+
         </div>
-        <div class="container">
+        <div class="container" style="background-color:forestgreen;color:white;padding:5px;font:large;">
+            <div>
+                Paso<i class="icon-seven-segment-3"></i>Verificando sus fcaturas. Espere por favor....
+            </div>
+        </div>
+                <div class="container">
             <div id="my-toolbar" style="padding:5px;">
                 <button class="btn-success" style="border-radius:5px;" onclick="ari_openSelf('PendingOrders.html');">
                     <i class="icon-upload"></i>
@@ -82,7 +88,28 @@
                 </button>
             </div>
         </div>
-        <div id="ContentArea" class="container metro">
+        <div class="container metro" style="margin-top:15px;">
+            <div class="row">
+                <div class="span12">
+                    <div style="text-align:center;">
+                        En esta zona se mostrará un icono en movimiento a la espera de que finalice la comprobación. 
+                        <br />
+                        Se puede imitar el fin de proceso haciendo clic en el botón más abajo.
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+        <div id="ContentArea" class="container metro" style="margin-top:15px;">
+            <div class="row">
+                <div class="span12 align-right">
+                    <button class="btn-success" onclick="ari_openSelf('FinalPendingOrders.html');">
+                        Paso <i class="icon-seven-segment-4" ></i>
+                        Fin de proceso.<i class="icon-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
         </div>
         <footer>
 

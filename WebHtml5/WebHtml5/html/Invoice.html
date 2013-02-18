@@ -17,6 +17,7 @@
         <link rel="stylesheet" type="text/css" href="css/bootmetro-charms.css">
         <link rel="stylesheet" type="text/css" href="css/metro-ui-light.css">
         <link rel="stylesheet" type="text/css" href="css/icomoon.css">
+        <link rel="stylesheet" type="text/css" href="content/css/datepicker.css" />
 
         <!--  these two css are to use only for documentation -->
         <link rel="stylesheet" type="text/css" href="css/demo.css">
@@ -54,8 +55,14 @@
         </header>
 
         <div class="container lead" style="color:forestgreen;">
-            <div class="icon-clipboard lead pull-left" style="margin:5px;"></div>
+            <div class="icon-upload lead pull-left" style="margin:5px;"></div>
             <div>Carga manual de facturas</div>
+
+        </div>
+        <div class="container" style="background-color:forestgreen;color:white;padding:5px;font:large;">
+            <div>
+                Paso<i class="icon-seven-segment-2"></i>Introduzca el detalle de su factura.
+            </div>
         </div>
         <div class="container">
             <div id="my-toolbar" style="padding:5px;">
@@ -83,6 +90,85 @@
             </div>
         </div>
         <div id="ContentArea" class="container metro">
+            <div class="row">
+                <div class="span3">
+                    <label>Nro. de factura</label>
+                    <input type="text" />
+                </div>
+                <div class="span3">
+                    <label>Fecha de factura</label>
+                    <div data-date-format="dd-mm-yyyy" data-date="01-01-2013" id="dp3" class="input-append datepicker">
+                        <input type="text" readonly="" value="01-01-2013" size="16" class="span2"/>
+                        <span class="add-on"><i class="icon-calendar"></i></span>
+                    </div>
+                </div>
+                <div class="span3">
+                    <label>Nro. de pedido</label>
+                    <input type="text" />
+                </div>
+                <div class="span3">
+                    <label>Fecha de pedido</label>
+                    <input type="text" />
+                </div>
+            </div>
+            <div class="row">
+                <div class="span12" style="vertical-align:central;">
+                    <label>
+                        Elija el fichero empaquetado que lleva su factura en formato <b>PDF (obligatorio)</b>
+                    </label>
+                    <input type="text" style="width:80%;" />
+                    <button class="btn-success" style="width:10%;"><i class="icon-search-2"></i>...</button>
+                </div>
+            </div>
+        <div class="container" style="background-color:forestgreen;color:white;padding:5px;font:large;">
+            <div>
+               Introduzca el desglose de IVA de su factura.
+            </div>
+        </div>
+            <div class="row">
+                <div class="span12">
+                    <table class="table table-condensed table-hover" >
+                        <thead >
+                            <tr >
+                                <th class="span4" style="color:forestgreen;">Tipo IVA (%)</th>
+                                <th class="span4" style="color:forestgreen;">Importe bases (&#x20AC;)</th>
+                                <th class="span4" style="color:forestgreen;">Importe cuotas (&#x20AC;)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><input type="text" /></td>
+                                <td><input type="text" /></td>
+                                <td><input type="text" /></td>
+                            </tr>
+                            <tr>
+                                <td><input type="text" /></td>
+                                <td><input type="text" /></td>
+                                <td><input type="text" /></td>
+                            </tr>
+                            <tr>
+                                <td><input type="text" /></td>
+                                <td><input type="text" /></td>
+                                <td><input type="text" /></td>
+                            </tr>
+                            <tr>
+                                <td><input type="text" /></td>
+                                <td><input type="text" /></td>
+                                <td><input type="text" /></td>
+                            </tr>
+                           
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="span12 align-right">
+                    <button class="btn-success" onclick="ari_openSelf('ManualInvoices.html');">
+                        Guardar datos
+                    </button>
+                </div>
+            </div>
         </div>
         <footer>
 

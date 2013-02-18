@@ -54,8 +54,13 @@
         </header>
 
         <div class="container lead" style="color:forestgreen;">
-            <div class="icon-clipboard lead pull-left" style="margin:5px;"></div>
-            <div>Carga manual de facturas</div>
+            <div class="icon-document lead pull-left" style="margin:5px;"></div>
+            <div>Consulta de facturas</div>
+        </div>
+        <div class="container" style="background-color:forestgreen;color:white;padding:5px;font:large;">
+            <div>
+                Resultados según los criterios introducidos
+            </div>
         </div>
         <div class="container">
             <div id="my-toolbar" style="padding:5px;">
@@ -83,6 +88,62 @@
             </div>
         </div>
         <div id="ContentArea" class="container metro">
+            <div class="row">
+                <div class="span12">
+                    <table class="table table-condensed table-hover" >
+                        <thead >
+                            <tr >
+                                <th class="span1" style="color:forestgreen;">Estado</th>
+                                <th class="span1" style="color:forestgreen;">N.Factura</th>
+                                <th class="span1" style="color:forestgreen;">Fecha factura</th>
+                                <th class="span1" style="color:forestgreen;">Nro de pedido</th>
+                                <th class="span1" style="color:forestgreen;">Fecha de pedido</th>
+                                <th class="span1 aling-right" style="color:forestgreen;">Importe pedido</th>
+                                <th class="span1 aling-right" style="color:forestgreen;">Importe factura</th>
+                                <th class="span2" style="color:forestgreen;">Observaciones</th>
+                                <th class="span1" style="color:forestgreen;text-align:center;">Acciones</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="success">
+                                <td>ACEPTADA</td>
+                                <td>SA-2013-00001</td>
+                                <td>15/02/2013</td>
+                                <td>01004521</td>
+                                <td>01/02/2013</td>
+                                <td>
+                                    3.450,12&#x20AC;</td>
+                                <td>
+                                    3.450,12&#x20AC;</td>
+                                <td>Este es un pedido de prueba</td>
+                                <td>
+                                    <button class="btn-success">
+                                        <i class="icon-info"></i>
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr class="info">
+                                <td>PENDIENTE</td>
+                                <td>M-2013-00003</td>
+                                <td>01/01/2013</td>
+                                <td>666789</td>
+                                <td>31/12/2012</td>
+                                <td>
+                                    520,10&#x20AC;</td>
+                                <td>
+                                    506,30&#x20AC;</td>
+                                <td>Su factura ha sido recibida y se encuentra a la espera de la validación administrativa</td>
+                                <td>
+                                    <button class="btn-success">
+                                        <i class="icon-info"></i>
+                                    </button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
         </div>
         <footer>
 

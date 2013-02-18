@@ -57,12 +57,17 @@
             <div class="icon-document lead pull-left" style="margin:5px;"></div>
             <div>Consulta de facturas</div>
         </div>
+        <div class="container" style="background-color:forestgreen;color:white;padding:5px;font:large;">
+            <div>
+                Introduzca los criterios de la búsqueda y pulse<i class="icon-search-2"></i>
+            </div>
+        </div>
         <div class="container">
             <div id="my-toolbar" style="padding:5px;">
-                <button class="btn-success" style="border-radius:5px;" onclick="ari_openSelf('AutoLoad.html');">
+                <button class="btn-success" style="border-radius:5px;" onclick="ari_openSelf('PendingOrders.html');">
                     <i class="icon-upload"></i>
                 </button>
-                <button class="btn-success" style="border-radius:5px;" onclick="ari_openSelf('HandLoad.html');">
+                <button class="btn-success" style="border-radius:5px;" onclick="ari_openSelf('PendingOrders2.html');">
                     <i class="icon-clipboard"></i>
                 </button>
                 <button class="btn-success"  style="border-radius:5px;" onclick="ari_openSelf('Invoices.html');">
@@ -83,6 +88,47 @@
             </div>
         </div>
         <div id="ContentArea" class="container metro">
+            <div class="row">
+                <div class="span6">
+                    <label>Desde fecha</label>
+                    <div data-date-format="dd-mm-yyyy" data-date="01-01-2013" id="dp3" class="input-append datepicker">
+                        <input type="text" readonly="" value="01-01-2013" size="16" class="span2"/>
+                        <span class="add-on"><i class="icon-calendar"></i></span>
+                    </div>
+                </div>
+                <div class="span6">
+                    <label>Hasta fecha</label>
+                    <div data-date-format="dd-mm-yyyy" data-date="01-01-2013" id="Div1" class="input-append datepicker">
+                        <input type="text" readonly="" value="01-01-2013" size="16" class="span2"/>
+                        <span class="add-on"><i class="icon-calendar"></i></span>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="span6">
+                    <label>Desde importe</label>
+                    <input type="text" />
+                </div>
+                <div class="span6">
+                    <label>Hasta importe</label>
+                    <input type="text" />
+                </div>
+            </div>
+            <div class="row">
+                <div class="span6">
+                    <label>Nro. Pedido</label>
+                    <input type="text" />
+                </div>
+                <div class="span6">
+                    <label>Nro. Factura</label>
+                    <input type="text" />
+                </div>
+            </div>
+            <div class="row">
+                <div class="span12 align-right" onclick="ari_openSelf('InvoiceSearch.html');">
+                    <button class="btn-success"><i class="icon-search-2"></i>Buscar</button>
+                </div>
+            </div>
         </div>
         <footer>
 
