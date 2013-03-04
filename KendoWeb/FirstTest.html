@@ -1,0 +1,55 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        <title>Test for Kendo</title>
+        <!-- Kendo UI Web Styles -->
+        <link rel="stylesheet" type="text/css" href="Content/kendo/2012.3.1114/kendo.common.min.css"/>
+        <link rel="stylesheet" type="text/css" href="Content/kendo/2012.3.1114/kendo.metro.min.css"/>
+        <!-- Kendo Scripts -->
+        <script src="Scripts/jquery-1.7.1.min.js"></script>
+        <script src="Scripts/kendo/2012.3.1114/kendo.web.min.js"></script>
+        <!-- my jQuey code -->
+        <script type="text/javascript">
+            (function ($) {
+                $(document).ready(function () {
+                    var localDataSource = new kendo.data.DataSource({ data: myData });
+                    $("#grid").kendoGrid({
+                        columns: [
+                            {
+                                field: "Nombre",
+                                title:"Nombre"
+                            },
+                            {
+                                field: "Grupo",
+                                title: "Grupo"
+                            }
+                        ],
+                        dataSource: localDataSource,
+                        groupable: true,
+                        scrollable: true,
+                        sortable: true,
+                        pageable: true
+                    });
+                })
+            })(jQuery);
+        </script>
+        <script>
+            var myData = [
+                {
+                    Nombre: "Juan Palomo",
+                    Grupo: "Administrativos"
+                },
+                {
+                    Nombre: "Pedro Ruiz",
+                    Grupo: "Directivos"
+                }
+
+            ]
+        </script>
+    </head>
+    <body class="k-content">
+        <div id="grid" style="font-family:Arial; font-size:12px;">
+        </div>
+    </body>
+</html>

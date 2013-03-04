@@ -1,0 +1,58 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KendoMvc", "KendoMvc\KendoMvc.csproj", "{D33013AE-32C2-4C94-8789-A2BCC85D6207}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KendoMvcTests", "KendoMvcTests\KendoMvcTests.csproj", "{CC30973E-AEBD-4460-A624-B23E8385729B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KendoMvc.OpenAccess", "KendoMvc.OpenAccess\KendoMvc.OpenAccess.csproj", "{C50145E6-A244-4F1F-B41F-90D1925B4A00}"
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "KendoWeb", "http://localhost:51040", "{04F979FC-C833-474C-A712-EF12181B31EC}"
+	ProjectSection(WebsiteProperties) = preProject
+		UseIISExpress = "true"
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.5"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_51040"
+		Debug.AspNetCompiler.PhysicalPath = "..\KendoWeb\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_51040\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_51040"
+		Release.AspNetCompiler.PhysicalPath = "..\KendoWeb\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_51040\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		SlnRelativePath = "..\KendoWeb\"
+		DefaultWebSiteLanguage = "Visual Basic"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D33013AE-32C2-4C94-8789-A2BCC85D6207}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D33013AE-32C2-4C94-8789-A2BCC85D6207}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D33013AE-32C2-4C94-8789-A2BCC85D6207}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D33013AE-32C2-4C94-8789-A2BCC85D6207}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CC30973E-AEBD-4460-A624-B23E8385729B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CC30973E-AEBD-4460-A624-B23E8385729B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CC30973E-AEBD-4460-A624-B23E8385729B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CC30973E-AEBD-4460-A624-B23E8385729B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C50145E6-A244-4F1F-B41F-90D1925B4A00}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C50145E6-A244-4F1F-B41F-90D1925B4A00}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C50145E6-A244-4F1F-B41F-90D1925B4A00}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C50145E6-A244-4F1F-B41F-90D1925B4A00}.Release|Any CPU.Build.0 = Release|Any CPU
+		{04F979FC-C833-474C-A712-EF12181B31EC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{04F979FC-C833-474C-A712-EF12181B31EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{04F979FC-C833-474C-A712-EF12181B31EC}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{04F979FC-C833-474C-A712-EF12181B31EC}.Release|Any CPU.Build.0 = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
