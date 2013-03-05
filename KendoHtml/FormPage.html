@@ -8,6 +8,7 @@
 
     <script src="Scripts/jquery-1.8.3.min.js"></script>
     <script src="Scripts/kendo/2012.3.1114/kendo.web.min.js"></script>
+    <script src="Scripts/kendo/2012.3.1114/cultures/kendo.culture.es-ES.min.js"></script>
 </head>
 <body>
     <div class="k-content" style="font-family:Arial,Verdana;">
@@ -26,6 +27,26 @@
             <br />
             <input id="txtMoneda" type="number" />
         </div>
+        <div id="campoFecha">
+            <label id="lblFecha" for="dtpFecha">Fecha</label>
+            <br />
+            <input id="rdtFecha" value="10/10/2013" />
+        </div>
+        <div id="campoCombo">
+            <label id="lblCombo" for="cmdCombo">Desplegable</label>
+            <br />
+            <input id="cmbCombo" />
+        </div>
+        <div id="campoEditor">
+            <label id="lblEditor" for="txtEditor"></label>
+            <br />
+            <textarea id="txtEditor" style="width:70%;height:200px;">
+
+            </textarea>
+        </div>
+        <div id="zonaBotones">
+            <input id="btnAceptar" type="button" class="k-button" value="Aceptar" />
+        </div>
     </div>
     <script type="text/javascript">
         /*
@@ -34,12 +55,52 @@
         */
         (function ($) {
             $(document).ready(function () {
+
+                function recogeValores() {
+                    var texto = $("#txtTexto").val();
+                    var numero = $("#txtNumerico").val();
+                    var moneda = $("#txtMoneda").val();
+                    var fecha = $("#rdtFecha").val();
+                    var combo = $("#cmbCombo").val();
+                    var editor = $("#txtEditor").val();
+                    alert(
+                        "texto: " + texto + " -- " +
+                        "numero: " + numero + " -- " +
+                        "moneda: " + moneda + " -- " +
+                        "fecha: " + fecha + " -- "  +
+                        "combo: " + combo + " -- " +
+                        "editor: " + editor + " -- "
+                        );
+
+                }
+
+
+                kendo.culture("es-ES");
+                $("#rdtFecha").kendoDatePicker();
+
                 $("#txtNumerico").kendoNumericTextBox({
+                    decimals:0
                 });
+
                 $("#txtMoneda").kendoNumericTextBox({
-                    format: "0.00€",
+                    format: "c",
                     decimals: 2
                 });
+
+                $("#cmbCombo").kendoComboBox({
+                    dataTextField: "text",
+                    dataValueField: "value",
+                    dataSource: [
+                        { text: "Elige 1", value: "1" },
+                        { text: "Elige 2", value: "2" }
+                    ],
+                    filter: "contains",
+                    suggest: true
+                });
+
+                $("#txtEditor").kendoEditor();
+
+                $("#btnAceptar").click(recogeValores);
             });
         })(jQuery);
     </script>
