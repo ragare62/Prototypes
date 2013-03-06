@@ -1,0 +1,120 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DomainModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="2.0.0.0" name="KendoContext" namespace="KendoModel" showPropertiesCompartment="true" xmlns="http://www.telerik.com/ORM">
+  <orm:orm name="KendoContext" backend="mysql" xmlns:orm="http://tempuri.org/ORM">
+    <orm:namespace name="KendoModel" default="true">
+      <orm:class name="Cliente" use-default-mapping="true" uniqueId="bca0e6c8-02fb-45c4-bb99-98ddeb25f1ea">
+        <orm:identity>
+          <orm:single-field field-name="_id" />
+        </orm:identity>
+        <orm:field name="_id" property="Id" uniqueId="0a0154f3-b87c-43ea-8a6b-27b14c588ed2" type="System.Int32">
+          <orm:column name="Id" sql-type="integer" nullable="false" length="0" scale="0" primary-key="true" converter="OpenAccessRuntime.Data.IntConverter" ado-type="Int32" />
+        </orm:field>
+        <orm:field name="_nombre" property="Nombre" uniqueId="0659b13c-f362-4ea2-ae7b-127efa7d80c9" type="System.String">
+          <orm:column name="Nombre" sql-type="varchar" nullable="true" length="255" scale="0" converter="OpenAccessRuntime.Data.VariableLengthStringConverter" ado-type="Varchar" />
+        </orm:field>
+        <orm:field name="_direccion" property="Direccion" uniqueId="066e0bc9-55a4-492a-aa59-c4b21250cae2" type="System.String">
+          <orm:column name="Direccion" sql-type="varchar" nullable="true" length="255" scale="0" converter="OpenAccessRuntime.Data.VariableLengthStringConverter" ado-type="Varchar" />
+        </orm:field>
+        <orm:field name="_fechaNacimiento" property="FechaNacimiento" uniqueId="06f20b43-acc5-4633-8066-40fbb015ff66" type="System.DateTime">
+          <orm:column name="FechaNacimiento" sql-type="datetime" nullable="false" length="0" scale="0" converter="OpenAccessRuntime.Data.Timestamp2DateTimeConverter" ado-type="DateTime" />
+        </orm:field>
+        <orm:field name="_grupoCliente" property="GrupoCliente" behavior="readwrite" uniqueId="f02895b6-7482-4d9e-9563-1270e7909b47" type="KendoModel.GrupoCliente">
+          <orm:reference uniqueId="b7e2641c-1e50-46f7-99f2-5421c17842b3" />
+        </orm:field>
+      </orm:class>
+      <orm:class name="GrupoCliente" use-default-mapping="true" uniqueId="94da7c7a-70d7-4671-a221-d6ba4141b352">
+        <orm:identity>
+          <orm:single-field field-name="_grupoId" />
+        </orm:identity>
+        <orm:field name="_grupoId" property="GrupoId" uniqueId="502fda23-9afb-4a15-b5a2-8dd2537c71bb" type="System.Int32">
+          <orm:column name="GrupoId" sql-type="integer" nullable="false" length="0" scale="0" primary-key="true" converter="OpenAccessRuntime.Data.IntConverter" ado-type="Int32" />
+        </orm:field>
+        <orm:field name="_nombre" property="Nombre" uniqueId="73640b6d-68bf-45f5-9fd8-31237ef7404a" type="System.String">
+          <orm:column name="Nombre" sql-type="varchar" nullable="true" length="255" scale="0" converter="OpenAccessRuntime.Data.VariableLengthStringConverter" ado-type="Varchar" />
+        </orm:field>
+        <orm:field name="_clientes" property="Clientes" behavior="readwrite" uniqueId="2151d2a8-0e63-40a6-8796-39e566ef3b11" type="KendoModel.Cliente">
+          <orm:collection element-class="KendoModel.Cliente" inverse-field="_grupoCliente" order-by="" uniqueId="b7e2641c-1e50-46f7-99f2-5421c17842b3" />
+        </orm:field>
+      </orm:class>
+    </orm:namespace>
+    <orm:schema schema="" />
+    <orm:relational-naming-settings>
+      <orm:remove-camel-case>False</orm:remove-camel-case>
+      <orm:source-strategy>Property</orm:source-strategy>
+    </orm:relational-naming-settings>
+  </orm:orm>
+  <ModelSettings xmlns="">
+    <AppConfigConnectionPropertyName>KendomodelConnection</AppConfigConnectionPropertyName>
+    <AppConfigConnectionString>server=localhost;User Id=root;password=aritel;Persist Security Info=True;database=kendomodel</AppConfigConnectionString>
+    <NamingSettings>
+      <ClassRules>
+        <CaseMode>PascalCase</CaseMode>
+        <PluralizationMode>Singularize</PluralizationMode>
+      </ClassRules>
+      <FieldRules>
+        <AddPrefix>_</AddPrefix>
+        <CaseMode>CamelCase</CaseMode>
+      </FieldRules>
+      <PropertyRules>
+        <CaseMode>PascalCase</CaseMode>
+      </PropertyRules>
+    </NamingSettings>
+    <CodeGenerationSettings>
+      <MappingDefinitionType>Xml</MappingDefinitionType>
+    </CodeGenerationSettings>
+    <SchemaUpdateSettings>
+      <DeploymentProject>KendoModel</DeploymentProject>
+    </SchemaUpdateSettings>
+    <BackendConfigurationSettings>
+      <BackendConfiguration>
+        <Backend>MySql</Backend>
+        <ProviderName>MySql.Data.MySqlClient</ProviderName>
+      </BackendConfiguration>
+    </BackendConfigurationSettings>
+  </ModelSettings>
+  <Types>
+    <DomainClass Id="bca0e6c8-02fb-45c4-bb99-98ddeb25f1ea" name="Cliente" namespace="KendoModel" showPropertiesCompartment="true" showNavigationCompartment="true" showImplementationCompartment="true">
+      <Property Id="0a0154f3-b87c-43ea-8a6b-27b14c588ed2" name="Id" type="System.Int32" label="Id : System.Int32" identity="true" fieldName="_id" />
+      <Property Id="0659b13c-f362-4ea2-ae7b-127efa7d80c9" name="Nombre" label="Nombre : String" fieldName="_nombre" />
+      <Property Id="066e0bc9-55a4-492a-aa59-c4b21250cae2" name="Direccion" label="Direccion : String" fieldName="_direccion" />
+      <Property Id="06f20b43-acc5-4633-8066-40fbb015ff66" name="FechaNacimiento" type="DateTime" label="FechaNacimiento : DateTime" fieldName="_fechaNacimiento" />
+      <AssociationTargets>
+        <Association Id="b7e2641c-1e50-46f7-99f2-5421c17842b3" SourceMultiplicity="ZeroOne" name="ClienteHasGrupoCliente">
+          <DomainClassMoniker name="/KendoContext/GrupoCliente" />
+          <targetNavigationalProperty>
+            <associationDefinesTargetProperty Id="db2087db-e811-4da4-8e15-1a96d076b239">
+              <NavigationalPropertyMoniker name="/KendoContext/GrupoCliente/Clientes" />
+            </associationDefinesTargetProperty>
+          </targetNavigationalProperty>
+          <sourceNavigationalProperty>
+            <associationDefinesSourceProperty Id="f52477b2-a9d9-4b50-93db-007ae3f7b855">
+              <NavigationalPropertyMoniker name="/KendoContext/Cliente/GrupoCliente" />
+            </associationDefinesSourceProperty>
+          </sourceNavigationalProperty>
+        </Association>
+      </AssociationTargets>
+      <navigationalProperties>
+        <classHasNavigationalProperties Id="2ede2aa6-5e60-4a15-a3f0-3b089c528034">
+          <NavigationalProperty Id="f02895b6-7482-4d9e-9563-1270e7909b47" name="GrupoCliente" type="GrupoCliente" label="GrupoCliente : GrupoCliente" nullable="true" kind="Persistent" fieldName="_grupoCliente" isDependent="false" isManaged="false" />
+        </classHasNavigationalProperties>
+      </navigationalProperties>
+    </DomainClass>
+    <DomainClass Id="94da7c7a-70d7-4671-a221-d6ba4141b352" name="GrupoCliente" namespace="KendoModel" showPropertiesCompartment="true" showNavigationCompartment="true" showImplementationCompartment="true">
+      <Property Id="502fda23-9afb-4a15-b5a2-8dd2537c71bb" name="GrupoId" type="System.Int32" label="GrupoId : System.Int32" identity="true" fieldName="_grupoId" />
+      <Property Id="73640b6d-68bf-45f5-9fd8-31237ef7404a" name="Nombre" label="Nombre : String" fieldName="_nombre" />
+      <navigationalProperties>
+        <classHasNavigationalProperties Id="ac00a6a4-dc87-4892-a4d4-05a63add2fb7">
+          <NavigationalProperty Id="2151d2a8-0e63-40a6-8796-39e566ef3b11" name="Clientes" type="IList&lt;Cliente&gt;" label="Clientes : IList&lt;Cliente&gt;" nullable="true" kind="Persistent" fieldName="_clientes" isDependent="false" isManaged="false" />
+        </classHasNavigationalProperties>
+      </navigationalProperties>
+    </DomainClass>
+  </Types>
+  <domainContext>
+    <domainModelHasDomainContext Id="c7f3a619-49ee-4ed2-83bd-836ee6622150">
+      <domainContainer name="KendoContext" namespace="KendoModel" showPropertiesCompartment="true">
+        <entitySetProperty name="Clientes" namespace="KendoModel" type="Cliente" label="Clientes : IQueryable&lt;KendoModel.Cliente&gt;" />
+        <entitySetProperty name="GrupoClientes" namespace="KendoModel" type="GrupoCliente" label="GrupoClientes : IQueryable&lt;KendoModel.GrupoCliente&gt;" />
+      </domainContainer>
+    </domainModelHasDomainContext>
+  </domainContext>
+</DomainModel>

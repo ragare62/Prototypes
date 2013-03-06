@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KendoModel", "..\KendoModel\KendoModel.csproj", "{82F90F88-131F-4BA9-B268-915F79F11E69}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KendoConsole", "..\KendoConsole\KendoConsole.csproj", "{970AAF33-0768-4D8A-A7D1-7359F6D3D833}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KendoWebApi", "..\KendoWebApi\KendoWebApi.csproj", "{C242C746-E155-44FF-A5F7-FF07195E397F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{82F90F88-131F-4BA9-B268-915F79F11E69}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{82F90F88-131F-4BA9-B268-915F79F11E69}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{82F90F88-131F-4BA9-B268-915F79F11E69}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{82F90F88-131F-4BA9-B268-915F79F11E69}.Release|Any CPU.Build.0 = Release|Any CPU
+		{970AAF33-0768-4D8A-A7D1-7359F6D3D833}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{970AAF33-0768-4D8A-A7D1-7359F6D3D833}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{970AAF33-0768-4D8A-A7D1-7359F6D3D833}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{970AAF33-0768-4D8A-A7D1-7359F6D3D833}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C242C746-E155-44FF-A5F7-FF07195E397F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C242C746-E155-44FF-A5F7-FF07195E397F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C242C746-E155-44FF-A5F7-FF07195E397F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C242C746-E155-44FF-A5F7-FF07195E397F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -5,58 +5,57 @@
         <!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame -->
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
         <!-- Mobile viewport optimized: h5bp.com/viewport -->
-        <meta name="viewport" content="width=device-width"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
         <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700' rel='stylesheet' type='text/css'/>
-        <link href="Content/bottstrap/css/bootstrap.css" rel="stylesheet" />
-        <link href="Content/bottstrap/css/bootstrap-responsive.css" rel="stylesheet" />
-        <link href="Content/bottstrap/css/bootmetro.css" rel="stylesheet" />
-        <link href="Content/bottstrap/css/bootmetro-tiles.css" rel="stylesheet" />
-        <link href="Content/bottstrap/css/bootmetro-charms.css" rel="stylesheet" />
-        <link href="Content/bottstrap/css/metro-ui-light.css" rel="stylesheet" />
-        <link href="Content/bottstrap/css/icomoon.css" rel="stylesheet" />
-        <!--  these two css are to use only for documentation -->
-        <link href="Content/bottstrap/css/demo.css" rel="stylesheet" />
-        <link rel="stylesheet" type="text/css" href="scripts/google-code-prettify/prettify.css" >
+        <link href="Content/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+        <link href="Content/bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet" />
 
         <title>Ejemplo de form</title>
         <link href="Content/kendo/2012.3.1114/kendo.common.min.css" rel="stylesheet" />
         <link href="Content/kendo/2012.3.1114/kendo.metro.min.css" rel="stylesheet" />
 
+        <script src="Content/bootstrap/js/bootstrap.min.js"></script>
         <script src="Scripts/jquery-1.8.3.min.js"></script>
         <script src="Scripts/kendo/2012.3.1114/kendo.web.min.js"></script>
         <script src="Scripts/kendo/2012.3.1114/cultures/kendo.culture.es-ES.min.js"></script>
     </head>
     <body>
-        <div class="k-content" style="font-family:Arial,Verdana;">
-            <div id="campoTexto">
-                <label id="lblTexto" for="txtTexto">Campo de texto</label>
-                <input id="txtTexto" type="text" class="k-textbox" />
+        <div class="container k-content">
+            <div class="row-fluid">
+                <div id="campoTexto" class="span2">
+                    <label id="lblTexto" for="txtTexto">Campo de texto</label>
+                    <input id="txtTexto" type="text" class="k-textbox" />
+                </div>
+                <div id="campoNumerico" class="span2">
+                    <label id="lblNumerico" for="txtNumerico">Campo numérico</label>
+                    <input id="txtNumerico" type="number" />
+                </div>
+                <div id="campoMoneda" class="span2">
+                    <label id="lblMoneda" for="txtMoneda">Campo moneda</label>
+                    <input id="txtMoneda" type="number" />
+                </div>
+                <div id="campoFecha" class="span3">
+                    <label id="lblFecha" for="dtpFecha">Fecha</label>
+                    <input id="rdtFecha" value="10/10/2013" />
+                </div>
+                <div id="campoCombo" class="span3">
+                    <label id="lblCombo" for="cmdCombo">Desplegable</label>
+                    <input id="cmbCombo" />
+                </div>
             </div>
-            <div id="campoNumerico">
-                <label id="lblNumerico" for="txtNumerico">Campo numérico</label>
-                <input id="txtNumerico" type="number" />
+            <div class="row-fluid">
+                <div id="campoEditor" class="span12">
+                    <label id="lblEditor" for="txtEditor">Editor</label>
+                    <textarea id="txtEditor" style="width:100%">
+                    </textarea>
+                </div>
             </div>
-            <div id="campoMoneda">
-                <label id="lblMoneda" for="txtMoneda">Campo moneda</label>
-                <input id="txtMoneda" type="number" />
-            </div>
-            <div id="campoFecha">
-                <label id="lblFecha" for="dtpFecha">Fecha</label>
-                <input id="rdtFecha" value="10/10/2013" />
-            </div>
-            <div id="campoCombo">
-                <label id="lblCombo" for="cmdCombo">Desplegable</label>
-                <input id="cmbCombo" />
-            </div>
-            <div id="campoEditor">
-                <label id="lblEditor" for="txtEditor">Editor</label>
-                <textarea id="txtEditor" style="width:70%;height:200px;">
-                </textarea>
-            </div>
-            <div id="zonaBotones">
-                <input id="btnAceptar" type="button" class="k-button" value="Aceptar" />
+            <div class="row-fluid">
+                <div id="zonaBotones" class="span12 text-right">
+                    <input id="btnAceptar" type="button" class="k-button" value="Aceptar" />
+                </div>
             </div>
         </div>
         <script type="text/javascript">
