@@ -31,7 +31,7 @@ namespace KendoWebApi
         /// </summary>
         /// <remarks>Web API Infrastructure will ALWAYS use the default constructor!</remarks>
         /// <param name="repository">Repository instance of the specific type</param>
-        public GrupoClientesController(IOpenAccessBaseRepository<KendoModel.GrupoCliente , KendoModel.KendoContext> repository)
+        public GrupoClientesController(IOpenAccessBaseRepository<KendoModel.GrupoCliente, KendoModel.KendoContext> repository)
         {
             this.repository = repository;
         }
@@ -55,7 +55,6 @@ namespace KendoWebApi
             return entity;
         }
 
-        
         /// <summary>
         /// Updates single entity.
         /// </summary>
@@ -66,14 +65,14 @@ namespace KendoWebApi
         /// or HttpStatusCode.NoContent if the operation was successful</returns>
         public virtual HttpResponseMessage Put(Int32 id, KendoModel.GrupoCliente entity)
         {
-                        if (entity == null ||
+            if (entity == null ||
                 id != entity.GrupoId)
                 throw new HttpResponseException(HttpStatusCode.BadRequest);
-
+            
             repository.Update(entity);
 
             return Request.CreateResponse(HttpStatusCode.NoContent);
-                    }
+        }
 
         /// <summary>
         /// Deletes an entity by it's ID
@@ -82,7 +81,7 @@ namespace KendoWebApi
         /// <returns>Always HttpStatusCode.OK</returns>
         public virtual HttpResponseMessage Delete(Int32 id)
         {
-                        KendoModel.GrupoCliente entity = repository.GetBy(k => k.GrupoId == id);
+            KendoModel.GrupoCliente entity = repository.GetBy(k => k.GrupoId == id);
             if (entity != null)
             {
                 repository.Delete(entity);
@@ -92,7 +91,7 @@ namespace KendoWebApi
             // meaning that several DELETE requests to the same URI must have the same effect as a single DELETE request. 
             // Therefore, the method should not return an error code if the product was already deleted.
             return new HttpResponseMessage(HttpStatusCode.OK);
-                    }
+        }
 
         /// <summary>
         /// Creates the response sent back to client after a new entity is successfully created.
